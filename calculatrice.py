@@ -1,5 +1,5 @@
-a =float(input("entrer un premier nombre"))
-b= float(input("entrer un deuxieme nombre"))
+a = float(input("entrer un premier nombre"))
+b = float(input("entrer un deuxieme nombre"))
 op = input("Operation(+, -, *, /)")
 
 if op == "+":
@@ -14,5 +14,5 @@ elif op =="/":
     else:
         print("resultat", a /b)
 else:
-        print("Operation inconnueé")
+        print("Operation inconnuée")
 
