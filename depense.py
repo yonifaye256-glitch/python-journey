@@ -16,8 +16,9 @@ def sauvegarde(liste):
 def charger():
     if os.path.exists("depenses.json"):
         with open ("depenses.json", "r") as f:
-            return json.load(f)
-        return[]
+            donnees = json.load(f)
+        return donnees or []
+    return[]
     
 def supprimer(liste, numero):
     if 1<= numero <= len(liste):
