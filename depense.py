@@ -18,3 +18,9 @@ def charger():
         with open ("depenses.json", "r") as f:
             return json.load(f)
         return[]
+    
+def supprimer(liste, numero):
+    if 1<= numero <= len(liste):
+        liste.pop(numero - 1)
+        return True
+    return False
